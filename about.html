@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style3.css">
+    <title>Luvvy store</title>
+  </head>
+  <body>
+<header class="bg-dark text-light">
+  <img class="logo"src="img\logobest.png" alt="logo">
+  <nav>
+    <ul class="nav_links">
+      <li><a href="main.html">Home</a></li>
+      <li><a href="clothes.html">Clothes</a></li>
+      <li><a href="basket.html">Basket</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+  </nav>
+  <a class="cta" href="#"><button>Log In</button></a>
+</header>
+<div class="container">
+  <div class="col text-dark">
+    <div class="app-text">
+         <h1>About project</h1>
+         <p>This project is being created under the management of Naziya Baysakalova, Aruzhan Uskembaeva, and Konys Symbat.
+          This is an online clothing store for most ages. Elegant style clothing is a priority. We will try to make this site better every day.</p>
+</br>
+         <p class="thumb">
+   <img src="img\photoNaziya.jpg" alt="Фотография 1" width="130" height="130">
+   <img src="img\aru.jpg" alt="Фотография 2" width="130" height="130">
+   <img src="img\symbat.jpg" alt="Фотография 3" width="130" height="130">
+
+  </p>
+  <h3>About store</h3>
+  <p>Luvvy is a fashion brand, a team of professionals and a huge community of girls in love with fashion.</p>
+  <p>Girl "Luvvy" loves high fashion! She loves how we transform trends and create clothes that can be worn on a daily basis.We are followed on social networks to see the latest in the fashion industry and what to wear with them, because we always demonstrate several options for combinations.</p>
+   <p>We try to simplify the technological cycle of making clothes, so that the time from the creation of a design to its release on sale takes no more than a couple of weeks. Luvvy's looks are always fresh.</p>
+   <p>Our company does not employ minors and only places orders in large professional factories with better working conditions.</p>
+   <p>Every day thousands of girls unpack bags with new Luvvy products and become happier, because it is obvious that a new dress can change your day, and with it your whole life!</p>
+   <h5>We are into fashion. We change and grow every day.</h5>
+
+     </div>
+  </div>
+</div>
+<hr>
+<section id="Feedback">
+  <div class="row row-bottom-padded-md">
+         <div class="col-md-6 to-animate">
+           <i class="fas fa-envelope"></i>
+         </div>
+         <div class="col-md-4 to-animate">
+           <h3>Feedback Form</h3>
+           <div class="form-group ">
+             <label for="name" class="sr-only"></label>
+             <input id="name" class="form-control" placeholder="Name" type="text">
+           </div>
+           <div class="form-group ">
+             <label for="email" class="sr-only"></label>
+             <input id="email" class="form-control" placeholder="Email" type="email">
+           </div>
+           <div class="form-group ">
+             <label for="message" class="sr-only"></label>
+             <textarea name="" id="message" cols="30" rows="5" class="form-control" placeholder="Feedback"></textarea>
+           </div>
+           <br>
+           <div class="form-group ">
+             <input class="btn btn-secondary btn-lg btn-block" value="Send Feedback" type="submit">
+           </div>
+           </div>
+         </div>
+</section>
+<br>
+<div id="feedback-main">
+  <div id="feedback-div">
+    <form action="contact.php" method="post" class="form" id="feedback-form1" name="form1" enctype="multipart/form-data">
+
+      <p class="name">
+        <input name="name" type="name" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" required placeholder="Name" id="feedback-name" />
+      </p>
+
+      <p class="email">
+        <input name="email" type="email" class="validate[required,custom[email]] feedback-input" id="feedback-email" placeholder="Email" required />
+      </p>
+
+      <p class="text">
+        <textarea name="comment" type="comment" class="validate[required,length[6,300]] feedback-input" id="feedback-comment" required placeholder="Hey, I really love the site but I believe that you could incorporate some ..... and also get rid of the ...... on the section."></textarea>
+      </p>
+
+      <div class="feedback-submit">
+        <input type="submit" value="SEND" id="feedback-button-blue" />
+        <div class="feedback-ease"></div>
+      </div>
+    </form>
+  </div>
+</div>
+
+<button id="popup" class="feedback-button" onclick="toggle_visibility()">Feedback</button>
+
+
+
+
+<footer class="bg-dark text-light pt-5 pb-4">
+        <div class="row text-center text-md-left">
+          <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+<h5 class="text-uppercase mb-4 font-weight-bold">About Us</h5>
+<hr class="mb-4">
+<p>We are students from Astana IT University, and it is out web site for the coding lab course(it will improve)</p>
+          </div>
+          <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h5 class="text-uppercase mb-4 font-weight-bold">Let us help</h5>
+            <hr class="mb-4">
+            <ul class="social-icons">
+    <li><a href="https://www.instagram.com/aruskembaeva/"><img src='img\free-icon-instagram-2111463.png' />Aruzhan's accaunt</a></li>
+    <li><a href="https://www.instagram.com/nazzeyaa/ "><img src='img\free-icon-instagram-2111463.png' /> Naziyaa's accaunt</a></li>
+    <li><a href="https://www.instagram.com/symbat.konys/"><img src='img\free-icon-instagram-2111463.png' />Symbat's accaunt</a></li>
+</ul>
+              <a href="#" class="text-light" style="text-decoration:none">Smth else</a>
+            </p>
+          </div>
+        </div>
+        </footer>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+    -->
+    <script src="reserv.js"></script>
+  </body>
+</html>
